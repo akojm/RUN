@@ -23,6 +23,7 @@ h2{
     margin-bottom: 1.25rem;
 }
 p{
+    font-size: 0.9rem;
 padding: 0 90px 0 0;
 line-height: 1.5rem;
 }
@@ -50,6 +51,7 @@ img{
    flex-direction: row;
    align-items: center;
 }
+
 .run-info{
     display: flex;
     flex-direction: column;
@@ -65,7 +67,7 @@ img{
 .foret-image{
     width: 100%;
 }
-.foret-image::before{
+.magna-info::before{
     content: "";
     position: absolute;
    width: 100%;
@@ -214,11 +216,32 @@ ul{
 /* ********* Mobile ********* */
 
 @media (max-width:602px){
+   p{
+       padding: 0;
+   }
+   .run-image{
+       margin: 35px auto;
+   }
+   .magna-info::before{
+   top:40px;
+}
+   .magna-info {
+    padding: 30px auto;
+}
+.tempus-info h2{
+    margin: 15px 0px;
+}
+.get{
+    margin: 35px auto;
+}
     #container-run{
         display: flex;
        flex-direction: column;
        align-items: center;
         padding: 0;
+    }
+    .magna-info{
+        padding: 60px 0 20px 0;
     }
     #container-foret{
         display: grid;
@@ -230,8 +253,18 @@ ul{
     #container-info{
         display: grid;
         grid-template-columns: 100%;
+        margin-top: -15px;
     }
     .pont-image{
         display: none;
     }
+    ul li {   
+        padding: 3px;
+    }
+    ul::before{
+    width: 50%;
+}
+}
+@media (max-width:602px){
+    
 }
