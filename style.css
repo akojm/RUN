@@ -10,7 +10,6 @@ body{
 font-family: 'Source Sans Pro', sans-serif;
 min-height: 100vh;
 font-size: 0.8rem;
-margin: 0 1.25rem;
 }
 h1 {
     font-size: 2.5rem;
@@ -226,7 +225,49 @@ ul li:hover{
 /* ********* Mobile ********* */
 
 @media (max-width:702px){
-  /*
+    p{
+        padding: 0;
+    }
+    #container-run{
+        grid-template-columns: 100%;
+    }
+    .run-image{
+        min-height: 100vh;
+       margin-top: 35px;
+     }
+     #container-foret{
+        grid-template-columns: 100%;
+     }
+     .foret-image{
+         display: none;
+     }
+     .magna-info{
+         padding: 5px;
+     }
+
+     #container-info{
+        grid-template-columns: 100%;
+     }
+     .tempus-info{
+         justify-content: flex-start;
+     }
+     .pont-image{
+         display: none;
+     }
+
+     /* BEFORE */
+     #container-foret::before{
+        width:100%;
+        height: 1px;
+        position: absolute;
+        top:70px;
+        transform: translateX(-50%);
+    }
+
+
+
+
+  /*.pont
     p{
        padding: 0;
    }
